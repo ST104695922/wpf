@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36915.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CybersecurityChatbot", "CybersecurityChatbot.csproj", "{043BA64E-3FE1-4E8F-9E94-081B8A376991}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CybersecurityChatbot(wpf)", "..\CybersecurityChatbot(wpf)\CybersecurityChatbot(wpf).csproj", "{2AA16F0C-3FB4-4DD7-BD50-D4DD53479C5A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{043BA64E-3FE1-4E8F-9E94-081B8A376991}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{043BA64E-3FE1-4E8F-9E94-081B8A376991}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{043BA64E-3FE1-4E8F-9E94-081B8A376991}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{043BA64E-3FE1-4E8F-9E94-081B8A376991}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AA16F0C-3FB4-4DD7-BD50-D4DD53479C5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AA16F0C-3FB4-4DD7-BD50-D4DD53479C5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AA16F0C-3FB4-4DD7-BD50-D4DD53479C5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AA16F0C-3FB4-4DD7-BD50-D4DD53479C5A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {709A0DF8-BBD0-42DC-8740-14D0B7C31F0F}
+	EndGlobalSection
+EndGlobal

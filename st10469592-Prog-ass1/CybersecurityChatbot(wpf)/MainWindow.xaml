@@ -1,0 +1,125 @@
+﻿<Window x:Class="CybersecurityChatbot_wpf_.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CybersecurityChatbot_wpf_"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <!-- logo image -->
+            <RowDefinition Height="Auto"/>
+            <!-- bot title -->
+            <RowDefinition Height="Auto"/>
+            <!-- divider line -->
+            <RowDefinition Height="Auto"/>
+            <!-- chat area -->
+            <RowDefinition Height="*"/>
+            <!-- input row -->
+            <RowDefinition Height="58"/>
+            <!-- status bar -->
+            <RowDefinition Height="22"/>
+        </Grid.RowDefinitions>
+
+
+        <!-- ROW 0: ASCII art logo image -->
+        <Image
+            Grid.Row="0"
+            Source="logo.png"
+            Height="155"
+            Margin="0,14,0,0"
+            HorizontalAlignment="Center"
+            Stretch="Uniform"/>
+
+
+        <!-- ROW 1: Bot title below the logo -->
+        <TextBlock
+            Grid.Row="1"
+            Text="CYBERSECURITY AWARENESS BOT"
+            Foreground="#ff69b4"
+            FontFamily="Consolas"
+            FontSize="16"
+            FontWeight="Bold"
+            HorizontalAlignment="Center"
+            Margin="0,10,0,6"
+            TextAlignment="Center"/>
+
+
+        <!-- ROW 2: Pink divider line -->
+        <Rectangle
+            Grid.Row="2"
+            Height="1"
+            Fill="#5a1040"
+            Margin="10,0,10,0"/>
+
+
+        <!-- ROW 3: Chat history ListView -->
+        <ListView
+            Grid.Row="3"
+            x:Name="chat_display"
+            Margin="10,8,10,6"
+            Background="#1a0020"
+            BorderBrush="#3d0030"
+            BorderThickness="1"
+            FontFamily="Consolas"
+            FontSize="12"
+            ScrollViewer.HorizontalScrollBarVisibility="Disabled"/>
+
+
+        <!-- ROW 4: Input row -->
+        <Grid Grid.Row="4" Margin="10,4,10,4">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="115"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Text input box -->
+            <TextBox
+                Grid.Column="0"
+                x:Name="message_box"
+                FontFamily="Consolas"
+                FontSize="13"
+                Background="#2a0030"
+                Foreground="#ffffff"
+                CaretBrush="#ff69b4"
+                BorderBrush="#ff69b4"
+                BorderThickness="1"
+                Padding="10,0"
+                VerticalContentAlignment="Center"
+                KeyDown="message_box_KeyDown"/>
+
+            <!-- Send button -->
+            <Button
+                Grid.Column="1"
+                x:Name="send_btn"
+                Content="SEND"
+                Margin="8,0,0,0"
+                FontFamily="Consolas"
+                FontSize="13"
+                FontWeight="Bold"
+                Background="#ff69b4"
+                Foreground="#1a0020"
+                BorderThickness="0"
+                Cursor="Hand"
+                Click="send_btn_Click"/>
+        </Grid>
+
+
+        <!-- ROW 5: Status bar -->
+        <Border
+            Grid.Row="5"
+            Background="#0d0015"
+            Padding="12,0">
+            <TextBlock
+                x:Name="status_bar"
+                Text="Ready"
+                Foreground="#a04070"
+                FontFamily="Consolas"
+                FontSize="10"
+                VerticalAlignment="Center"/>
+        </Border>
+
+
+    </Grid>
+</Window>
